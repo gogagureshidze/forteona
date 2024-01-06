@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/forteona/static/css/main.a9ccb4d0.css",
+    "main.js": "/forteona/static/js/main.6e928219.js",
+    "index.html": "/forteona/index.html",
+    "main.a9ccb4d0.css.map": "/forteona/static/css/main.a9ccb4d0.css.map",
+    "main.6e928219.js.map": "/forteona/static/js/main.6e928219.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9ccb4d0.css",
+    "static/js/main.6e928219.js"
+  ]
+}

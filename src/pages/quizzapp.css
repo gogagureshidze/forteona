@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.quiz-container {
+ 
+    margin-bottom: 20px;
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ddd;
+  word-wrap: break-word; /* Breaks long words and prevents overflow */
+  overflow-wrap: break-word;
+
+  
+}
+
+h2 {
+  font-size: 58px;
+  margin-bottom: 20px;
+  color: #e50067;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: rgba(89, 89, 89, 0.948);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  word-wrap: break-word; /* Wrap long words */
+  max-width: 100%; /* Ensure answers don't exceed the container width */
+  overflow: hidden; /* Hide any content that exceeds the container */
+  text-overflow: ellipsis; /* Display an ellipsis for truncated text */
+}
+
+label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  margin-right: 8px;
+  font-size: 20px;
+  appearance: none;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type='radio']:checked {
+  background-color: #007bff;
+}
+
+button {
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .quiz-container {
+    width: 100%; /* Adjust to fit the screen */
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Increase font size for better readability */
+     margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 36px; /* Adjust heading font size */
+    margin-top: 100px; /* Adjust margin for smaller screens */
+  }
+
+  h3 {
+    font-size: 25px; /* Adjust heading font size */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  li {
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  input[type='radio'] {
+    width: 14px; /* Adjust radio button size for smaller screens */
+    height: 14px; /* Adjust radio button size for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Adjust button padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .error-message {
+    font-size: 18px; /* Adjust font size for error message on smaller screens */
+  }
+}
